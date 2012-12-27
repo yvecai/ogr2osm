@@ -14,21 +14,12 @@ the software you need.
 
 It also makes use of lxml. Although it should fall back to builtin XML implementations seamlessly these are less likely to be tested and will most likely run much slower.
 
-To install ogr2osm and download the default translations the following command 
-can be used:
-
-	git clone --recursive https://github.com/pnorman/ogr2osm
-	
-To update
-
-	cd ogr2osm
-	git pull
-	git submodule update
 	
 About
 -----
 
 This version of ogr2osm is based on 
+[Paul Norman version](https://github.com/pnorman/ogr2osm.git), which is based on 
 [Andrew Guertin's version for UVM](https://github.com/andrewguertin/ogr2osm)
 which is in turn based on Ivan Ortega's version from the OSM SVN server.
 
