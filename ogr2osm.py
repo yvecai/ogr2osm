@@ -601,7 +601,7 @@ def output():
                     tag = etree.Element('tag', {'k':key, 'v':value})
                     xmlobject.append(tag)
                     
-            f.write(etree.tostring(xmlobject))
+            f.write(etree.tostring(xmlobject, pretty_print=True,encoding='UTF-8')))
             f.write('\n')
             
         for way in ways:
@@ -618,7 +618,7 @@ def output():
                     tag = etree.Element('tag', {'k':key, 'v':value})
                     xmlobject.append(tag)
                     
-            f.write(etree.tostring(xmlobject))
+            f.write(etree.tostring(xmlobject, pretty_print=True,encoding='UTF-8')))
             f.write('\n')
             
         for relation in relations:
@@ -638,7 +638,7 @@ def output():
                     tag = etree.Element('tag', {'k':key, 'v':value})
                     xmlobject.append(tag)
                     
-            f.write(etree.tostring(xmlobject))
+            f.write(etree.tostring(xmlobject, pretty_print=True,encoding='UTF-8')))
             f.write('\n')
             
         f.write('</osm>')
